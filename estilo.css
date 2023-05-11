@@ -6,7 +6,8 @@
     --verde: #12c651;
     --preto: #000000;
     --branco: #ffffff;
-    --borda: 0.2rem solid var(--black);
+    --escuro:  #878787;
+    --borda: 0.2rem solid var(--preto);
 }
 
 * {
@@ -24,7 +25,7 @@
     background-position: center; */
 }
 *::selection {
-    
+    background-color: var(--verde);
 }
 
 html {
@@ -38,6 +39,82 @@ section {
     margin: 0 auto;
 }
 
+
+
+.backtop{
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    /* background-color: var(--verde); */
+    background-size: cover;
+    background-position: center; 
+}
+
+
+/* .home-bg */
+.home-bg {
+     /* background: var(--branco); */
+    /*background: linear-gradient(90deg, red, transparent 70%); */
+     background-size: cover;
+    background-position: center; 
+    
+}
+.home-bg .home {
+    text-align: center;
+    min-height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    justify-content:center;
+    flex-direction:row;
+    
+}
+
+.home-bg .home .content {
+    width: 50rem;
+    text-align: center;
+    margin-left:4rem ;
+}
+.home-bg .home .content h3 {
+    font-size: 3rem;
+    color: var(--verde);
+    font-family: 'Montserrat';
+}
+.home-bg .home .content p {
+    padding: 1em 0;
+    font-size: 1.4rem;
+    color: var(--ver);
+    line-height: 2;
+}
+
+.home-bg .home .content img {
+    height: 100%;
+    margin-left: 9rem; 
+    
+}
+
+.home-bg .home .content form {
+    flex: 1 1 40rem;
+    border: var(--borda);
+    padding: 2rem;
+    text-align: left;
+    margin-right: 25rem;
+    
+}
+.home-bg .home .content form h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--escuro);
+}
+.home-bg .home .content form .box {
+    width: 100%;
+    border: var(--borda);
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--escuro);
+    margin: 1rem 0;
+}
 /* Títulos */
 .heading {
     text-align: center;
@@ -76,49 +153,6 @@ section {
     cursor: pointer;
     display: none;
 }
-
-
-/* .home-bg */
-.home-bg {
-    /* background: var(--branco); */
-    /* background: linear-gradient(90deg, red, transparent 70%); */
-    /* background-size: cover;
-    background-position: center; */
-    
-}
-.home-bg .home {
-    min-height: 40rem;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    /* gap: 2rem;
-    justify-content: space-between; */
-    
-}
-
-.home-bg .home .content {
-    width: 50rem;
-    text-align:start;
-    margin-left:4rem ;
-}
-.home-bg .home .content h3 {
-    font-size: 3rem;
-    color: var(--preto);
-    font-family: 'Montserrat';
-}
-.home-bg .home .content p {
-    padding: 1em 0;
-    font-size: 1.4rem;
-    color: var(--claro);
-    line-height: 2;
-}
-
-.home-bg .home .content img {
-    height: 100%;
-    margin-left: 9rem; 
-    
-}
-
 
 @media (max-width: 991px) {
     html{
